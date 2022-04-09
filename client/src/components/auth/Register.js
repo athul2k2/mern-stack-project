@@ -24,7 +24,8 @@ const Register = () => {
 
     return (
         <Fragment>
-            <h1 class="large text-primary">Sign Up</h1>
+        <div className='SignupForm'>
+            <h1 className="large text-primary">Sign Up</h1>
       <p className="lead"><i class="fas fa-user"></i> Create Your Account</p>
       <form className="form" onSubmit={e => onSubmit(e)}>
         <div className="form-group">
@@ -32,11 +33,11 @@ const Register = () => {
         </div>
         <div className="form-group">
           <input type="email" placeholder="Email Address" name="email" value={email} onChange={e => onChange(e) } required />
-          <small class="form-text"
+          <small className="form-text"
             >This site uses Gravatar so if you want a profile image, use a
             Gravatar email</small
           >
-        </div>
+        </div >
         <div className="form-group">
           <input
             type="password"
@@ -59,11 +60,12 @@ const Register = () => {
             minLength="6"
           />
         </div>
-        <input type="submit" class="btn btn-primary" value="Register" />
+        <input type="submit" className="btn btn-primary" value="Register" />
       </form>
       <p class="my-1">
         Already have an account? <a href="login.html">Sign In</a>
       </p>
+    </div>
  </Fragment>
     )
 }

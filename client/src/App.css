@@ -252,6 +252,11 @@ img {
 .form .form-group {
   margin: 1.2rem 0;
 }
+.SignupForm
+{
+  margin-top: 5rem;
+  padding: 3rem;
+}
 
 .form .form-text {
   display: block;
